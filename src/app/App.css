@@ -1,0 +1,110 @@
+.app {
+  padding: 16px;
+  background-color: #f8f8f8;
+  min-height: 100vh;
+}
+
+.filterContainer {
+  padding: 16px 16px 80px;
+  background-color: #fff;
+}
+
+.empty {
+  margin: 20% auto ;
+  text-align: center;
+}
+
+.body {
+  margin-top: 16px;
+}
+
+.loaderContainer {
+  flex-basis: 70%;
+  height: 100vh;
+}
+
+.loader {
+  margin: 20% auto;
+  border: 8px solid #fdf0df;
+  border-top: 8px solid #ff6f61;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  animation: rotateLoader 2s linear infinite;
+}
+
+@keyframes rotateLoader {
+  0% {
+      transform: rotate(0deg);
+  }
+
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+.cardList{
+display:flex;
+flex-wrap: wrap;
+justify-content: center;
+flex-basis: 80%;
+margin-top: 10px;
+}
+
+.container{
+  display:flex;
+flex-wrap: wrap;
+}
+
+.FilterList{
+  flex-basis: 20%;
+  height: max-content;
+  padding-bottom:80px;
+  
+}
+
+
+@media (min-width: 320px) and (max-width: 699px) {
+  .FilterList {
+    flex-basis: 100%; 
+    max-width: 100%;
+    min-width:100%;  
+  }
+  .cardList {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+  }
+  .loaderContainer {
+    flex-basis: 100%;
+  }
+}
+
+
+
+@media (min-width: 700px) and (max-width: 1023px) {
+  .FilterList {
+    flex-basis: 30%; 
+  }
+  .cardList {
+   
+    flex-basis: 70%;
+  }
+}
+
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .FilterList {
+    flex-basis: 23%;  
+  }
+  .cardList {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 77%;
+  }
+  
+}

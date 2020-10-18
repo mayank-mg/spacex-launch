@@ -1,0 +1,52 @@
+.FilterList{
+
+    background-color: white;
+    max-width: 30%;
+    min-width:20%; 
+    margin-top:15px;  
+}
+
+.FilterList>:first-child{
+   
+    margin: 10px; 
+    margin-top:15px;   
+}
+
+.chip{
+    color: #212121;
+    background-color: #84f090;
+    padding:10px 16px;
+    display: inline-block;
+    margin: 16px 10px 0 10px;
+    font-size: 18px;
+    border-radius: 8px;
+    min-width: 44px;
+    cursor: pointer;
+    width: 24%;
+    text-align: center;  
+}
+
+.chip:hover, .active {
+    background-color: #19ab2a;
+}
+.tiles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.heading{
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+    border-bottom: 1px solid black;
+    padding: 16px 0 16px;
+    margin: 16px 25px 10px 25px;
+}
+
+@media (min-width: 700px) and (max-width: 1023px) {
+    .chip{ 
+        width: 21%; 
+    }
+
+}
+  
