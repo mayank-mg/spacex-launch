@@ -8,13 +8,17 @@ function Filter({ initial, clickfilter }) {
 
   const filterUpdate = (key, value) => {
     console.log("filter update " + key + value);
+    if(key=="launch_year"){
+          delete active["launch_success"];
+          delete active["land_year"];
+  }
     setActive({ ...active, [key]: value });
     clickfilter(key, value);
   };
 
   return (
     <div className="FilterList">
-      <div>
+      <div className="filterTitle">
         <h2>Filters</h2>
       </div>
       <div className="heading">Launch Year</div>

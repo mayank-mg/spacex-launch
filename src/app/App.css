@@ -43,14 +43,10 @@
   }
 }
 
-
-
-
-
 .cardList{
 display:flex;
 flex-wrap: wrap;
-justify-content: center;
+justify-content: flex-start;
 flex-basis: 80%;
 margin-top: 10px;
 }
@@ -64,7 +60,10 @@ flex-wrap: wrap;
   flex-basis: 20%;
   height: max-content;
   padding-bottom:80px;
-  
+  background-color: white;
+  max-width: 30%;
+  min-width:20%; 
+  margin-top:15px;  
 }
 
 

@@ -16,8 +16,14 @@ const location=useLocation();
 
 
 const handlefilter=(key,val)=>{
-  if(params.has(key))
+  if(params.has(key)){
+      if(key=="launch_year"){
+          params.delete("launch_success");
+          params.delete("land_year"); 
+      }
     params.set(key,val);
+   
+  }
     else
     params.append(key,val) 
     history.push(location.pathname + "?" + params.toString());

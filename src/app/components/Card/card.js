@@ -3,7 +3,7 @@ import "./style.css";
 function card(data, key) {
   return (
     <div className="card">
-      <img src={data.data.links.mission_patch_small} />
+      <img src={data.data.links.mission_patch_small} alt="spacex_image" />
       <div className="flex">
         <h2>
           {data.data.mission_name} #{data.data.flight_number}

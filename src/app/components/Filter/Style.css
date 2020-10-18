@@ -1,12 +1,5 @@
-.FilterList{
 
-    background-color: white;
-    max-width: 30%;
-    min-width:20%; 
-    margin-top:15px;  
-}
-
-.FilterList>:first-child{
+.filterTitle{
    
     margin: 10px; 
     margin-top:15px;   
